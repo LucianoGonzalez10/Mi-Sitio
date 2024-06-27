@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Archivos/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    background-color: rgb(92, 92, 92);
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* Asegura que los elementos se distribuyan uniformemente */
+    align-items: center;
+    padding: 15px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5vw; /* Utiliza unidades relativas para el tamaño de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: #072333 1px 0 10px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3vw; /* Utiliza unidades relativas para el tamaño de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: #072333 1px 0 10px;
+    text-align: center;
+}
+
+#botones {
+    display: flex;
+    justify-content: center; /* Centra el botón */
+    padding: 20px;
+}
+
+#downloadButton {
+    background-color: rgb(92, 92, 92);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: #072333 1px 0 10px;
+    font-size: 3vw; /* Utiliza unidades relativas para el tamaño de fuente */
+    padding: 10px 20px; /* Añade padding para hacer el botón más clicable */
+    transition: background-color 0.3s, color 0.3s; /* Añadir una transición suave */
+    cursor: pointer;
+}
+
+#downloadButton:hover {
+    background-color: #00BEF0; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+
+li {
+    color: white;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: #072333 1px 0 10px;
+    margin: 0 10px; /* Añade márgenes laterales para el espacio entre elementos */
+    font-size: 2vw; /* Utiliza unidades relativas para el tamaño de fuente */
+    cursor: pointer;
+}
+
+#boton-barra {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+color: #00BEF0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+/* Media Queries para tamaños de pantalla pequeños */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    #downloadButton {
+        font-size: 4vw;
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    li {
+        font-size: 3vw;
+    }
+
+    #downloadButton {
+        font-size: 5vw;
+        padding: 20px 40px;
+    }
+}
