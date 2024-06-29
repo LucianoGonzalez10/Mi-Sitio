@@ -1,7 +1,5 @@
-// Inicialización de EmailJS
-emailjs.init("CFygvwo22STtWkxYW"); // Reemplaza "tu_public_key" con tu clave pública real de EmailJS
+emailjs.init("CFygvwo22STtWkxYW");
 
-// Código para el botón de descarga
 document.getElementById('downloadButton').addEventListener('click', function() {
     const link = document.createElement('a');
     link.href = 'Archivos\\Luciano-gonzalez-Marangoni-CV.pdf'; 
@@ -11,18 +9,15 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     document.body.removeChild(link);
 });
 
-// Código mejorado para el formulario de contacto
 document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
     const submitButton = document.getElementById('submitButton');
     const formFields = ['nombre', 'apellido', 'email', 'mensaje'];
 
-    // Función para validar el email
     function isValidEmail(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
 
-    // Función para validar el formulario
     function validateForm() {
         let isValid = true;
         formFields.forEach(field => {
@@ -52,17 +47,14 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Mostrar indicador de carga
         submitButton.disabled = true;
         submitButton.innerHTML = 'Enviando...';
 
-        // Obtener los valores del formulario
         const nombre = document.getElementById('nombre').value;
         const apellido = document.getElementById('apellido').value;
         const email = document.getElementById('email').value;
         const mensaje = document.getElementById('mensaje').value;
 
-        // Log para depuración
         console.log('Intentando enviar email con los siguientes datos:', {
             serviceID: 'service_kiwzt99',
             templateID: 'template_946teyd',
@@ -73,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Configurar EmailJS
         emailjs.send('service_kiwzt99', 'template_946teyd', {
             from_name: `${nombre} ${apellido}`,
             email: email,
@@ -88,13 +79,11 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Hubo un error al enviar el mensaje: ' + JSON.stringify(error));
         })
         .finally(function() {
-            // Restaurar el botón de envío
             submitButton.disabled = false;
             submitButton.innerHTML = 'Enviar';
         });
     });
 
-    // Mejorar la accesibilidad añadiendo manejo de teclado
     formFields.forEach(field => {
         const input = document.getElementById(field);
         input.addEventListener('keypress', function(e) {
