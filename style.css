@@ -7,16 +7,16 @@
     padding: 10px 20px;
     font-size: 1em;
     color: #333;
-    background-color: #ccc; /* Color gris para el botón de LinkedIn */
+    background-color: #ccc; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 10px; /* Espacio izquierdo para separar del botón de CV */
+    margin-left: 10px; 
 }
 
 .linkedin-button:hover {
-    background-color: #999; /* Cambio de color al pasar el cursor */
+    background-color: #999; 
     color: #333;
 }
 
@@ -35,7 +35,7 @@ body {
 
 header {
     z-index: 1000;
-    position: -webkit-sticky; /* Soporte para Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
 }
@@ -49,10 +49,10 @@ ul {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
-    position: -webkit-sticky; /* Soporte para Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
-    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    z-index: 1000; 
 }
 
 
@@ -79,29 +79,29 @@ h1 {
 }
 
 #miFoto {
-    width: 150px;  /* Ajusta el tamaño según sea necesario */
-    height: 150px; /* Ajusta el tamaño según sea necesario */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
-    margin: 20px 0; /* Añade espacio alrededor de la imagen */
-    border: 4px solid #007022; /* Añade un borde alrededor de la imagen */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra suave para dar profundidad */
-    display: block; /* Centra la imagen si es necesario */
+    width: 150px;  
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 20px 0; 
+    border: 4px solid #007022;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block; 
     margin-left: auto;
     margin-right: auto;
 }
 
 #miDescripcion {
-    font-size: 1.2em; /* Tamaño de fuente ligeramente más grande */
-    color: #555; /* Color de texto gris */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    max-width: 800px; /* Ancho máximo para centrar el texto */
-    margin: 20px auto; /* Centra la descripción horizontalmente y añade márgenes */
-    padding: 20px; /* Espaciado interno */
-    background-color: #fff; /* Fondo blanco para la descripción */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
-    text-align: justify; /* Justifica el texto */
+    font-size: 1.2em; 
+    color: #555; 
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
 }
 
 #botones {
@@ -132,8 +132,7 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 10px; /* Espacio superior para separar del contenido */
-}
+    margin-top: 10px; 
 
 .github-button:hover {
     background-color: #555;
@@ -187,13 +186,13 @@ button:hover {
 }
 
 #contactForm {
-    max-width: 600px; /* Ancho máximo para el formulario */
+    max-width: 600px;
     width: 100%;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Alineación del texto dentro del formulario */
+    text-align: left; 
 }
 
 #contactForm label {
@@ -204,7 +203,7 @@ button:hover {
 
 #contactForm input,
 #contactForm textarea {
-    width: calc(100% - 20px); /* Ajusta el ancho para tener en cuenta el padding */
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -213,7 +212,7 @@ button:hover {
 }
 
 #contactForm textarea {
-    resize: vertical; /* Permitir redimensionamiento vertical */
+    resize: vertical; 
 }
 
 #submitButton {
@@ -231,8 +230,6 @@ button:hover {
     background-color: #005018;
 }
 
-/* Media queries para dispositivos móviles y tablets */
-
 @media only screen and (max-width: 768px) {
     #botones {
         display: flex;
@@ -242,7 +239,7 @@ button:hover {
 
     .linkedin-button {
         margin-left: 0;
-        margin-top: 10px; /* Espacio superior para separar del botón de CV */
+        margin-top: 10px; 
     }
 
     ul {
@@ -299,7 +296,6 @@ button:hover {
     }
 }
 
-/* Media queries para pantallas pequeñas (ej. smartphones en modo landscape) */
 @media only screen and (max-width: 480px) {
     #miFoto {
         width: 100px;
