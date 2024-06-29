@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +7,82 @@
     <title>Luciano Gonzalez</title>
 </head>
 <body>
-    <ul>
-        <li> <a href=""> SOBRE MI </a></li>
-        <li> <a href="#Proyecto"> PROYECTOS </a></li>
-        <li> <a href=""> REDES SOCIALES </a></li>
-    </ul>
-    
-    <h1> Luciano Gonzalez Marangoni </h1>
+    <header>
+        <ul class="nav">
+            <li><a href="#Sobre-Mi">Sobre Mi</a></li>
+            <li><a href="#Proyecto">Proyectos</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </header>
 
-    <section>
-         <div id="botones">
-          <button id="downloadButton"> MI CV ⬇️ </button>
-    </div>
+    <section id="Sobre-Mi">
+        <br> <br>
+        <h1>Luciano Gonzalez Marangoni</h1>
+        <img id="miFoto" src="Archivos/miFoto" alt="Mi Foto">
+        <p id="miDescripcion">Soy Técnico Universitario en Programación, apasionado por el desarrollo de software desde los 16 años. 
+            Inicié con sitios web y continué mis estudios en la Universidad Tecnológica Nacional. 
+            Actualmente me especializo en la Programacion Orientada a Objetos.</p>
+        <div id="botones">
+            <button id="downloadButton">Descarga mi CV</button>
+            <a href="https://www.linkedin.com/in/luciano-gonzalez-marangoni-31b2ab224/" class="linkedin-button">Visita mi perfil en LinkedIn</a>
+        </div>
     </section>
 
-   
-  
     <section id="Proyecto">
-        // PROYECTOS 
+        <div class="seccion-proyecto">
+            <img class="imagen-proyecto" src="Archivos/convertScreen.png" alt="Proyecto 1">
+            <h1 class="titulo-proyecto">Convertidor de YouTube a Audio</h1>
+            <p class="descripcion-proyecto">Sitio web personal desarrollado con Node.js que convierte videos de YouTube a archivos de audio (mp3 o wav).</p>
+            <a href="https://github.com/LucianoGonzalez10/CONVERSOR-YOUTUBE-TO-MP3-OR-WAV" target="_blank">
+                <button class="github-button">Ver GitHub</button>
+            </a>            
+        </div>
+
+        <div class="seccion-proyecto">
+            <img class="imagen-proyecto" src="Archivos/spotScreen.png" alt="Proyecto 2">
+            <h1 class="titulo-proyecto">Spotifake</h1>
+            <p class="descripcion-proyecto">
+                Programa desarrollado en Java, que simula el funcionamiento de una aplicación de música.
+                El programa permite agregar, eliminar y reproducir canciones. Se utilizo Swing para el front-end. Se aplico
+                abstraccion, genericidad, archivos JSON, clases, interfaces, colecciones, excepciones y ABM.
+            </p>
+            <a href="https://github.com/LucianoGonzalez10/Spotifake-Java-Project" target="_blank">
+                <button class="github-button">Ver GitHub</button>
+            </a>
+        </div>
+
+        <div class="seccion-proyecto">
+            <img class="imagen-proyecto" src="Archivos/carritoScreen.png" alt="Proyecto 3">
+            <h1 class="titulo-proyecto">Carrito en JavaScript</h1>
+            <p class="descripcion-proyecto">Tienda online con funcionalidad de carrito de compras desarrollada en JavaScript.</p>
+            <a href="https://github.com/LucianoGonzalez10/Carrito-de-compras" target="_blank">
+                <button class="github-button">Ver GitHub</button>
+            </a>
+        </div>
     </section>
+
+    <section id="Contacto">
+        <h1>Contacto</h1>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="from_email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" id="submitButton">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
